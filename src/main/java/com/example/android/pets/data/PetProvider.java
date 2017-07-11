@@ -7,12 +7,18 @@ import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
+import android.util.Log;
+import android.widget.EditText;
+import android.widget.Spinner;
+
+import static com.example.android.pets.data.PetContract.PetEntry.CONTENT_URI;
 
 /**
  * {@link ContentProvider} for Pets app.
  */
 public class PetProvider extends ContentProvider {
 
+    public static final String LOG_TAG1 = PetProvider.class.getName();
     /**
      * Tag for the log messages
      */
@@ -20,15 +26,33 @@ public class PetProvider extends ContentProvider {
     private static final int PETS = 100;
     private static final int PET_ID = 101;
     private static final UriMatcher sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
+    /**
+     * EditText field to enter the pet's name
+     */
+    private EditText mNameEditText;
+    /**
+     * EditText field to enter the pet's breed
+     */
+    private EditText mBreedEditText;
+    /**
+     * EditText field to enter the pet's weight
+     */
+    private EditText mWeightEditText;
+    /**
+     * EditText field to enter the pet's gender
+     */
+    private Spinner mGenderSpinner;
     //Database Helper Object
     private PetDbHelper mDBHelper;
+
+    private PetDbHelper mDBHelper1;
+
 
     /**
      * Initialize the provider and the database helper object.
      */
     @Override
     public boolean onCreate() {
-        // TODO: Create and initialize a PetDbHelper object to gain access to the pets database.
         // Make sure the variable is a global variable, so it can be referenced from other
         // ContentProvider methods.
         mDBHelper = new PetDbHelper(getContext());
@@ -88,7 +112,35 @@ public class PetProvider extends ContentProvider {
      */
     @Override
     public Uri insert(Uri uri, ContentValues contentValues) {
-        return null;
+        final int match = sUriMatcher.match(uri);
+        switch (match) {
+            case PETS:
+                return insertPet(uri, contentValues);
+            default:
+                throw new IllegalArgumentException("Insertion is not supported for " + uri);
+        }
+    }
+
+    /**
+     * Insert a pet into the database with the given content values. Return the new content URI
+     * for that specific row in the database.
+     */
+    private Uri insertPet(Uri uri, ContentValues values) {
+
+        Uri mNewUri;
+
+        mNewUri = CONTENT_URI;
+
+        SQLiteDatabase db = mDBHelper.getWritableDatabase();
+
+        long Id = db.insert(PetContract.PetEntry.TABLE_NAME, null, values);
+        if (Id != -1) {
+            Log.i(LOG_TAG1, "Failed to insert row for " + uri);
+        }
+
+        // Once we know the ID of the new row in the table,
+        // return the new URI with the ID appended to the end of it
+        return ContentUris.withAppendedId(uri, Id);
     }
 
     /**
