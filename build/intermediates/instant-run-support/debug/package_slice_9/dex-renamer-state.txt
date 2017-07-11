@@ -1,0 +1,4 @@
+#Sat Jul 08 15:37:06 BST 2017
+base.0=/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9
+renamed.0=classes.dex
+file.0=/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex

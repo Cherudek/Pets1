@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/Gregorio/.android/build-cache/50d1747897d2febbffb903d13bb6702631f147c5/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/Gregorio/.android/build-cache/50d1747897d2febbffb903d13bb6702631f147c5/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
+        "source": "/Users/Gregorio/.android/build-cache/50d1747897d2febbffb903d13bb6702631f147c5/output/res/anim-v21/design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
+        "source": "/Users/Gregorio/.android/build-cache/50d1747897d2febbffb903d13bb6702631f147c5/output/res/anim-v21/design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/Gregorio/.android/build-cache/50d1747897d2febbffb903d13bb6702631f147c5/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/Gregorio/.android/build-cache/50d1747897d2febbffb903d13bb6702631f147c5/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]
