@@ -36,7 +36,9 @@ public class PetProvider extends ContentProvider {
      */
     public static final String LOG_TAG = PetProvider.class.getSimpleName();
 
-    /** URI matcher code for the content URI for the pets table */
+    /**
+     * URI matcher code for the content URI for the pets table
+     */
     private static final int PETS = 100;
 
     /** URI matcher code for the content URI for a single pet in the pets table */
