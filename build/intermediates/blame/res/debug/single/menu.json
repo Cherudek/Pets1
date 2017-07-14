@@ -1,15 +1,7 @@
 [
     {
-        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/menu/menu_catalog.xml",
-        "source": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/src/main/res/menu/menu_catalog.xml"
-    },
-    {
         "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/menu/menu_editor.xml",
         "source": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/res/menu/menu_editor.xml"
-    },
-    {
-        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/menu/menu_editor.xml",
-        "source": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/src/main/res/menu/menu_editor.xml"
     },
     {
         "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/menu/menu_catalog.xml",

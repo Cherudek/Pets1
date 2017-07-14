@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_empty_shelter.png",
-        "source": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/src/main/res/drawable-xxxhdpi/ic_empty_shelter.png"
-    },
-    {
         "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_empty_shelter.png",
         "source": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/res/drawable-xxxhdpi/ic_empty_shelter.png"
     },
@@ -14,13 +10,5 @@
     {
         "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_add_pet.png",
         "source": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/res/drawable-xxxhdpi/ic_add_pet.png"
-    },
-    {
-        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_done.png",
-        "source": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/src/main/res/drawable-xxxhdpi/ic_done.png"
-    },
-    {
-        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_add_pet.png",
-        "source": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/src/main/res/drawable-xxxhdpi/ic_add_pet.png"
     }
 ]

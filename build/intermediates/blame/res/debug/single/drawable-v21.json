@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
-        "source": "/Users/Gregorio/.android/build-cache/0234a9ee39c6698144de10b5e4d314fc0bbc6034/output/res/drawable-v21/abc_edit_text_material.xml"
-    },
-    {
         "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
         "source": "/Users/Gregorio/.android/build-cache/0234a9ee39c6698144de10b5e4d314fc0bbc6034/output/res/drawable-v21/abc_edit_text_material.xml"
     },
@@ -14,13 +10,5 @@
     {
         "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
         "source": "/Users/Gregorio/.android/build-cache/0234a9ee39c6698144de10b5e4d314fc0bbc6034/output/res/drawable-v21/abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
-        "source": "/Users/Gregorio/.android/build-cache/0234a9ee39c6698144de10b5e4d314fc0bbc6034/output/res/drawable-v21/abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/ud845-Pets-starting-point/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
-        "source": "/Users/Gregorio/.android/build-cache/0234a9ee39c6698144de10b5e4d314fc0bbc6034/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
     }
 ]
