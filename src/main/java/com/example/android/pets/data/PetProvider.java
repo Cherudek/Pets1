@@ -157,21 +157,14 @@ public class PetProvider extends ContentProvider {
      */
     private Uri insertPet(Uri uri, ContentValues values) {
 
-        //Loader automatically reloads with latest data
-        getContext().
-                getContentResolver().
-                notifyChange(uri, null);
 
         // Check that the name is not null
         String name = values.getAsString(PetEntry.COLUMN_PET_NAME);
         if (name == null) {
             throw new IllegalArgumentException("Pet requires a name");
         }
-        // Check that the BREED is not null
-        String breed = values.getAsString(PetEntry.COLUMN_PET_BREED);
-        if (breed == null) {
-            throw new IllegalArgumentException("Pet requires a breed");
-        }
+
+        // No need to check the breed, any value is valid (including null).
 
         // Check that the Gender is not null
         Integer gender = values.getAsInteger(PetEntry.COLUMN_PET_GENDER);
@@ -196,6 +189,9 @@ public class PetProvider extends ContentProvider {
             return null;
         }
 
+        //Loader automatically reloads with latest data
+        getContext().getContentResolver().notifyChange(uri, null);
+
         // Return the new URI with the ID (of the newly inserted row) appended at the end
         return ContentUris.withAppendedId(uri, id);
     }
@@ -203,26 +199,36 @@ public class PetProvider extends ContentProvider {
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
 
-        //Loader automatically reloads with latest data
-        getContext().
-                getContentResolver().
-                notifyChange(uri, null);
         // Get writeable database
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
+
+        // Track the number of rows that were deleted
+        int rowsDeleted;
 
         final int match = sUriMatcher.match(uri);
         switch (match) {
             case PETS:
                 // Delete all rows that match the selection and selection args
-                return database.delete(PetEntry.TABLE_NAME, selection, selectionArgs);
+                rowsDeleted = database.delete(PetEntry.TABLE_NAME, selection, selectionArgs);
+                break;
             case PET_ID:
                 // Delete a single row given by the ID in the URI
                 selection = PetEntry._ID + "=?";
                 selectionArgs = new String[]{String.valueOf(ContentUris.parseId(uri))};
-                return database.delete(PetEntry.TABLE_NAME, selection, selectionArgs);
+                rowsDeleted = database.delete(PetEntry.TABLE_NAME, selection, selectionArgs);
+                break;
             default:
                 throw new IllegalArgumentException("Deletion is not supported for " + uri);
         }
+
+        // If 1 or more rows were deleted, then notify all listeners that the data at the
+        // given URI has changed
+        if (rowsDeleted != 0) {
+            getContext().getContentResolver().notifyChange(uri, null);
+        }
+
+        // Return the number of rows deleted
+        return rowsDeleted;
     }
 
 
@@ -265,13 +271,7 @@ public class PetProvider extends ContentProvider {
             }
         }
 
-        // Check that the BREED is not null
-        if (values.containsKey(PetEntry.COLUMN_PET_BREED)) {
-            String breed = values.getAsString(PetEntry.COLUMN_PET_BREED);
-            if (breed == null) {
-                throw new IllegalArgumentException("Pet requires a breed");
-            }
-        }
+        // No need to check the breed, any value is valid (including null).
 
         // Check that the Gender is not null
         if (values.containsKey(PetEntry.COLUMN_PET_GENDER)) {
@@ -290,22 +290,27 @@ public class PetProvider extends ContentProvider {
             }
         }
 
-        // Get writeable database
-        SQLiteDatabase database = mDbHelper.getWritableDatabase();
-
-        //Return the number of rows that were affected
-
-        // Insert the new pet with the given values
-        long id = database.update(PetEntry.TABLE_NAME, values, selection, selectionArgs);
-        // If the ID is -1, then the insertion failed. Log an error and return null.
-        if (id == -1) {
-            Log.e(LOG_TAG, "Failed to insert row for " + uri);
+        // If there are no values to update, then don't try to update the database
+        if (values.size() == 0) {
             return 0;
         }
 
-        // Return the new URI with the ID (of the newly inserted row) appended at the end
+        // Get writeable database
+        SQLiteDatabase database = mDbHelper.getWritableDatabase();
 
-        return database.update(PetEntry.TABLE_NAME, values, selection, selectionArgs);
+
+        // Perform the update on the database and get the number of rows affected
+        int rowsUpdated = database.update(PetEntry.TABLE_NAME, values, selection, selectionArgs);
+
+        // If 1 or more rows were updated, then notify all listeners that the data at the
+        // given URI has changed
+        if (rowsUpdated != 0) {
+            getContext().getContentResolver().notifyChange(uri, null);
+        }
+
+        // Return the number of rows updated
+        return rowsUpdated;
+
 
     }
 }
