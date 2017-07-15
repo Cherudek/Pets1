@@ -32,6 +32,10 @@
         "source": "/Users/Gregorio/.android/build-cache/0234a9ee39c6698144de10b5e4d314fc0bbc6034/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
+        "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/layout/list_item.xml",
+        "source": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/res/layout/list_item.xml"
+    },
+    {
         "merged": "/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
         "source": "/Users/Gregorio/.android/build-cache/0234a9ee39c6698144de10b5e4d314fc0bbc6034/output/res/layout/select_dialog_multichoice_material.xml"
     },

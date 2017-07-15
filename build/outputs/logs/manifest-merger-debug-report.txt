@@ -2,14 +2,14 @@
 manifest
 ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:13:1-47:12
 	package
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:13:11-45
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:14:5-39
 		INJECTED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:14:11-69
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:13:11-69
 	android:versionCode
 		INJECTED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml
@@ -52,9 +52,9 @@ ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app
 	android:label
 		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:32:13-66
 	android:parentActivityName
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:34:13-58
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:33:13-58
 	android:theme
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:33:13-47
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:34:13-47
 	android:name
 		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:31:13-43
 meta-data#android.support.PARENT_ACTIVITY
