@@ -122,6 +122,9 @@ public class PetProvider extends ContentProvider {
             default:
                 throw new IllegalArgumentException("Cannot query unknown URI " + uri);
         }
+
+        //Loader automatically reloads with latest data
+        cursor.setNotificationUri(getContext().getContentResolver(), uri);
         return cursor;
     }
     @Override
@@ -153,6 +156,11 @@ public class PetProvider extends ContentProvider {
      * for that specific row in the database.
      */
     private Uri insertPet(Uri uri, ContentValues values) {
+
+        //Loader automatically reloads with latest data
+        getContext().
+                getContentResolver().
+                notifyChange(uri, null);
 
         // Check that the name is not null
         String name = values.getAsString(PetEntry.COLUMN_PET_NAME);
@@ -194,6 +202,11 @@ public class PetProvider extends ContentProvider {
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
+
+        //Loader automatically reloads with latest data
+        getContext().
+                getContentResolver().
+                notifyChange(uri, null);
         // Get writeable database
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
 
@@ -238,6 +251,9 @@ public class PetProvider extends ContentProvider {
      * Return the number of rows that were successfully updated.
      */
     private int updatePet(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
+        //Loader automatically reloads with latest data
+        getContext().getContentResolver().notifyChange(uri, null);
+
 
         // Update the selected pets in the pets database table with the given ContentValues
         // Check that the name is not null
@@ -290,5 +306,6 @@ public class PetProvider extends ContentProvider {
         // Return the new URI with the ID (of the newly inserted row) appended at the end
 
         return database.update(PetEntry.TABLE_NAME, values, selection, selectionArgs);
+
     }
 }
