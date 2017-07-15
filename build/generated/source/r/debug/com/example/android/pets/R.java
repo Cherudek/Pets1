@@ -2561,6 +2561,7 @@ containing a value of this type.
         public static final int left=0x7f0d0027;
         public static final int line1=0x7f0d0089;
         public static final int line3=0x7f0d008d;
+        public static final int list=0x7f0d006c;
         public static final int listMode=0x7f0d000b;
         public static final int list_item=0x7f0d0043;
         public static final int media_actions=0x7f0d0087;
@@ -2618,7 +2619,6 @@ containing a value of this type.
         public static final int text=0x7f0d008e;
         public static final int text2=0x7f0d008c;
         public static final int textSpacerNoButtons=0x7f0d004f;
-        public static final int text_view_pet=0x7f0d006c;
         public static final int time=0x7f0d008a;
         public static final int title=0x7f0d0045;
         public static final int title_template=0x7f0d004a;
