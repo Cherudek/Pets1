@@ -516,6 +516,7 @@
     <string name="category_measurement">Measurement</string>
     <string name="category_overview">Overview</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="discard">Discard</string>
     <string name="editor_activity_title_edit_pet">Edit Pet</string>
     <string name="editor_activity_title_new_pet">Add a Pet</string>
     <string name="editor_insert_pet_failed">Error with saving pet</string>
@@ -530,8 +531,10 @@
     <string name="hint_pet_breed">Breed</string>
     <string name="hint_pet_name">Name</string>
     <string name="hint_pet_weight">Weight</string>
+    <string name="keep_editing">Keep Editing</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="unit_pet_weight">kg</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
