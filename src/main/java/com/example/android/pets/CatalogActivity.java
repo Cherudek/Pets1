@@ -1,6 +1,7 @@
 package com.example.android.pets;
 
 import android.app.LoaderManager;
+import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.CursorLoader;
 import android.content.Intent;
@@ -62,6 +63,10 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
                 //Passing the new Edit Pet activity name
                 String message = "Edit Pet";
                 myIntent.putExtra("key", message);
+                //Getting the URI id
+                Uri currentPetURI = ContentUris.withAppendedId(PetEntry.CONTENT_URI, id);
+                //passing the uri ID to the intent
+                myIntent.setData(currentPetURI);
                 CatalogActivity.this.startActivity(myIntent);
             }
         });

@@ -6,23 +6,26 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1500207122938"
+    timestamp="1500208889919"
     token="-7414799242664964912"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="473" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="36" />
     <task
         name="verifier"
-        duration="0" />
+        duration="5" />
 
+    <artifact
+        location="/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
     <artifact
         location="/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/outputs/apk/app-debug.apk"
         type="SPLIT_MAIN" />
@@ -70,16 +73,19 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1500207098388"
+        timestamp="1500208258647"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1500208889919"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1500207122938"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />

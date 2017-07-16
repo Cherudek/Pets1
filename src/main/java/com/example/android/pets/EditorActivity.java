@@ -16,11 +16,13 @@
 package com.example.android.pets;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,6 +40,9 @@ import static com.example.android.pets.data.PetContract.PetEntry;
  * Allows user to create a new pet or edit an existing one.
  */
 public class EditorActivity extends AppCompatActivity {
+
+    public static final String LOG_TAG = EditorActivity.class.getSimpleName();
+
 
     /** EditText field to enter the pet's name */
     private EditText mNameEditText;
@@ -63,9 +68,19 @@ public class EditorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editor);
-        //Setting the new Edit Pet name from the ListView onClick Intent
-        String message = getIntent().getStringExtra("key").toString(); // Now, message has Drawer title
-        setTitle(message);
+
+        //getting the Uri ID for the current pet clicked on the List View
+        Intent intent = getIntent();
+        Uri currentPetURI = intent.getData();
+        Log.i(LOG_TAG, "TEST: The Pet Uri passed from the List View is:" + currentPetURI);
+
+        //Setting the new Editor Activity depending if we insert a new pet currentPet Uri == null
+        // or if we edit an existent pet currentPet id has a value
+        if (currentPetURI == null) {
+            setTitle(R.string.editor_activity_title_new_pet);
+        } else {
+            setTitle(getString(R.string.editor_activity_title_edit_pet));
+        }
 
         // Find all relevant views that we will need to read user input from
         mNameEditText = (EditText) findViewById(R.id.edit_pet_name);
