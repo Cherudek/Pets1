@@ -63,6 +63,9 @@ public class EditorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editor);
+        //Setting the new Edit Pet name from the ListView onClick Intent
+        String message = getIntent().getStringExtra("key").toString(); // Now, message has Drawer title
+        setTitle(message);
 
         // Find all relevant views that we will need to read user input from
         mNameEditText = (EditText) findViewById(R.id.edit_pet_name);

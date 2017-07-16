@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:13:1-47:12
+ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:13:1-46:12
 	package
 		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:14:5-39
 		INJECTED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app
 		INJECTED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:16:5-45:19
+ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:16:5-44:19
 MERGED from [com.android.support:design:24.1.1] /Users/Gregorio/.android/build-cache/50d1747897d2febbffb903d13bb6702631f147c5/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/Gregorio/.android/build-cache/0234a9ee39c6698144de10b5e4d314fc0bbc6034/output/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/Gregorio/.android/build-cache/b0a6cb53bc92a07ebff31f85a2c5c83c9facb253/output/AndroidManifest.xml:22:5-20
@@ -48,29 +48,27 @@ ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app
 	android:name
 		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:27:27-74
 activity#com.example.android.pets.EditorActivity
-ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:30:9-39:20
-	android:label
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:32:13-66
+ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:30:9-38:20
 	android:parentActivityName
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:33:13-58
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:32:13-58
 	android:theme
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:34:13-47
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:33:13-47
 	android:name
 		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:31:13-43
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:36:13-38:52
+ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:35:13-37:52
 	android:value
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:38:17-49
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:37:17-49
 	android:name
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:37:17-63
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:36:17-63
 provider#com.example.android.pets.data.PetProvider
-ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:41:9-44:40
+ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:40:9-43:40
 	android:authorities
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:43:13-59
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:42:13-59
 	android:exported
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:44:13-37
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:42:13-45
+		ADDED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml:41:13-45
 uses-sdk
 INJECTED from /Users/Gregorio/Documents/Andoid Studio Projects/In Progress/Pets/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:24.1.1] /Users/Gregorio/.android/build-cache/50d1747897d2febbffb903d13bb6702631f147c5/output/AndroidManifest.xml:20:5-43

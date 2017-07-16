@@ -59,9 +59,10 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent myIntent = new Intent(CatalogActivity.this, EditorActivity.class);
+                //Passing the new Edit Pet activity name
+                String message = "Edit Pet";
+                myIntent.putExtra("key", message);
                 CatalogActivity.this.startActivity(myIntent);
-
-
             }
         });
 
