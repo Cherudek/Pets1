@@ -45,7 +45,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderCallbacks
 
     public static final String LOG_TAG = EditorActivity.class.getSimpleName();
 
-    private static final int PET_LOADER = 1;
+    private static final int EXISTING_PET_LOADER = 0;
 
     /**
      * Content URI for the existing pet (null if it's a new pet)
@@ -70,8 +70,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderCallbacks
      */
     private int mGender = 0;
 
-    private String selection;
-
 
 
     @Override
@@ -82,9 +80,9 @@ public class EditorActivity extends AppCompatActivity implements LoaderCallbacks
         //getting the Uri ID for the current pet clicked on the List View
         Intent intent = getIntent();
         mCurrentPetUri = intent.getData();
-        selection = Uri.parse(PetEntry._ID).toString();
+
         Log.i(LOG_TAG, "TEST: The Pet Uri passed from the List View is:" + mCurrentPetUri);
-        Log.i(LOG_TAG, "TEST: The Pet Uri String passed from the List View is:" + selection);
+        Log.i(LOG_TAG, "TEST: The Pet Uri String passed from the List View is:" + mCurrentPetUri);
 
 
         //Setting the new Editor Activity depending if we insert a new pet currentPet Uri == null
@@ -98,7 +96,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderCallbacks
 
             // Initialize a loader to read the pet data from the database
             // and display the current values in the editor
-            getSupportLoaderManager().initLoader(PET_LOADER, null, this);
+            getSupportLoaderManager().initLoader(EXISTING_PET_LOADER, null, this);
         }
 
         // Find all relevant views that we will need to read user input from
@@ -185,6 +183,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderCallbacks
                         Toast.LENGTH_SHORT).show();
             }
 
+        } else {
 
             // Otherwise this is an EXISTING pet, so update the pet with content URI: mCurrentPetUri
             // and pass in the new ContentValues. Pass in null for the selection and selection args

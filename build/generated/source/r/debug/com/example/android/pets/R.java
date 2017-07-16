@@ -2748,16 +2748,18 @@ containing a value of this type.
         public static final int editor_activity_title_new_pet=0x7f06002c;
         public static final int editor_insert_pet_failed=0x7f06002d;
         public static final int editor_insert_pet_successful=0x7f06002e;
-        public static final int empty_view_subtitle_text=0x7f06002f;
-        public static final int empty_view_title_text=0x7f060030;
-        public static final int gender_female=0x7f060031;
-        public static final int gender_male=0x7f060032;
-        public static final int gender_unknown=0x7f060033;
-        public static final int hint_pet_breed=0x7f060034;
-        public static final int hint_pet_name=0x7f060035;
-        public static final int hint_pet_weight=0x7f060036;
+        public static final int editor_update_pet_failed=0x7f06002f;
+        public static final int editor_update_pet_successful=0x7f060030;
+        public static final int empty_view_subtitle_text=0x7f060031;
+        public static final int empty_view_title_text=0x7f060032;
+        public static final int gender_female=0x7f060033;
+        public static final int gender_male=0x7f060034;
+        public static final int gender_unknown=0x7f060035;
+        public static final int hint_pet_breed=0x7f060036;
+        public static final int hint_pet_name=0x7f060037;
+        public static final int hint_pet_weight=0x7f060038;
         public static final int status_bar_notification_info_overflow=0x7f060013;
-        public static final int unit_pet_weight=0x7f060037;
+        public static final int unit_pet_weight=0x7f060039;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f08008c;
