@@ -456,20 +456,22 @@ public class EditorActivity extends AppCompatActivity implements LoaderCallbacks
      * Perform the deletion of the pet in the database.
      */
     private void deletePet() {
-        int rowsAffected = getContentResolver().delete(mCurrentPetUri, PetEntry.TABLE_NAME, null);
 
-        // Show a toast message depending on whether or not the insertion was successful
-        if (rowsAffected == 0) {
-            // If the new content URI is null, then there was an error with insertion.
-            Toast.makeText(this, getString(R.string.editor_delete_pet_failed),
-                    Toast.LENGTH_SHORT).show();
-        } else {
-            // Otherwise, the insertion was successful and we can display a toast.
-            Toast.makeText(this, getString(R.string.editor_delete_pet_successful),
-                    Toast.LENGTH_SHORT).show();
-            finish();
+        if (mCurrentPetUri != null) {
+            int rowsAffected = getContentResolver().delete(mCurrentPetUri, PetEntry.TABLE_NAME, null);
+
+            // Show a toast message depending on whether or not the insertion was successful
+            if (rowsAffected == 0) {
+                // If the new content URI is null, then there was an error with insertion.
+                Toast.makeText(this, getString(R.string.editor_delete_pet_failed),
+                        Toast.LENGTH_SHORT).show();
+            } else {
+                // Otherwise, the insertion was successful and we can display a toast.
+                Toast.makeText(this, getString(R.string.editor_delete_pet_successful),
+                        Toast.LENGTH_SHORT).show();
+                finish();
+            }
         }
+
     }
-
-
 }
