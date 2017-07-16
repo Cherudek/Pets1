@@ -2767,7 +2767,8 @@ containing a value of this type.
         public static final int keep_editing=0x7f06003f;
         public static final int status_bar_notification_info_overflow=0x7f060013;
         public static final int unit_pet_weight=0x7f060040;
-        public static final int unsaved_changes_dialog_msg=0x7f060041;
+        public static final int unknown_breed=0x7f060041;
+        public static final int unsaved_changes_dialog_msg=0x7f060042;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f08008c;

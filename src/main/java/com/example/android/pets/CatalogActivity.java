@@ -58,6 +58,7 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         mCursorAdapter = new PetCursorAdapter(this, null);
         petListView.setAdapter(mCursorAdapter);
 
+
         //OnClick method to open up the EditorActivity when we click on an item of the ListVIew
         petListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -158,7 +159,7 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         builder.setPositiveButton(R.string.delete, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 // User clicked the "Delete" button, so delete the pet.
-                deletePet();
+                deleteAllPets();
             }
         });
         builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
@@ -179,7 +180,7 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
     /**
      * Perform the deletion of the pet in the database.
      */
-    private void deletePet() {
+    private void deleteAllPets() {
 
         if (PetEntry.CONTENT_URI != null) {
             int tableAffected = getContentResolver().delete(PetEntry.CONTENT_URI, null, null);

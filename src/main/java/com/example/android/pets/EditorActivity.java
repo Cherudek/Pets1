@@ -251,6 +251,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderCallbacks
             // Insert a new pet into the provider, returning the content URI for the new pet.
             Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
 
+
             // Show a toast message depending on whether or not the insertion was successful
             if (newUri == null) {
                 // If the new content URI is null, then there was an error with insertion.

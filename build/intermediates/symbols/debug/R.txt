@@ -888,7 +888,8 @@ int string hint_pet_weight 0x7f06003e
 int string keep_editing 0x7f06003f
 int string status_bar_notification_info_overflow 0x7f060013
 int string unit_pet_weight 0x7f060040
-int string unsaved_changes_dialog_msg 0x7f060041
+int string unknown_breed 0x7f060041
+int string unsaved_changes_dialog_msg 0x7f060042
 int style AlertDialog_AppCompat 0x7f08008c
 int style AlertDialog_AppCompat_Light 0x7f08008d
 int style Animation_AppCompat_Dialog 0x7f08008e

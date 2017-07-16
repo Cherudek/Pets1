@@ -539,6 +539,7 @@
     <string name="keep_editing">Keep Editing</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="unit_pet_weight">kg</string>
+    <string name="unknown_breed">Unknown breed</string>
     <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
