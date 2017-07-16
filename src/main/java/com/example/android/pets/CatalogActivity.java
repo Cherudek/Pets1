@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.android.pets.data.PetContract;
@@ -52,6 +53,17 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
 
         mCursorAdapter = new PetCursorAdapter(this, null);
         petListView.setAdapter(mCursorAdapter);
+
+        //OnClick method to open up the EditorActivity when we click on an item of the ListVIew
+        petListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent myIntent = new Intent(CatalogActivity.this, EditorActivity.class);
+                CatalogActivity.this.startActivity(myIntent);
+
+
+            }
+        });
 
         //Kick Off the Loader
         getLoaderManager().initLoader(PET_LOADER, null, this);
