@@ -22,6 +22,13 @@
 
     <!-- Toast message in editor when new pet has failed to be inserted [CHAR LIMIT=NONE] -->
     <string name="editor_insert_pet_failed">Error with saving pet</string>
+
+    <!-- Toast message in editor when new pet has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_update_pet_successful">Pet Updated</string>
+
+    <!-- Toast message in editor when a pet has failed to be update [CHAR LIMIT=NONE] -->
+    <string name="editor_update_pet_failed">Error with updating pet</string>
+
     <!-- Name for the application [CHAR LIMIT=12] -->
     <string name="app_name">Pets</string>
 
@@ -69,5 +76,7 @@
 
     <!-- Label for dropdown menu option if the pet is female [CHAR LIMIT=20] -->
     <string name="gender_female">Female</string>
+
+    <!-- Label for Editor Activity [CHAR LIMIT=20] -->
     <string name="editor_activity_title_edit_pet">Edit Pet</string>
 </resources>

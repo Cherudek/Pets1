@@ -17,7 +17,7 @@ public  class PetDbHelper extends SQLiteOpenHelper {
             "CREATE TABLE " + PetContract.PetEntry.TABLE_NAME + " (" +
                     PetContract.PetEntry._ID + " INTEGER PRIMARY KEY NOT NULL," +
                     PetContract.PetEntry.COLUMN_PET_NAME + " TEXT NOT NULL," +
-                    PetContract.PetEntry.COLUMN_PET_BREED + " TEXT NOT NULL," +
+                    PetContract.PetEntry.COLUMN_PET_BREED + " TEXT," +
                     PetContract.PetEntry.COLUMN_PET_GENDER + " INTEGER NOT NULL," +
                     PetContract.PetEntry.COLUMN_PET_WEIGHT + " INTEGER NOT NULL) ";
     private static final String SQL_DELETE_ENTRIES =
